@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite" parallel="tests" thread-count="3">
+  <test name="UI Tests">
+    <classes>
+      <class name="com.framework.runner.UIRunner"/>
+    </classes>
+  </test>
+  <test name="API Tests">
+    <classes>
+      <class name="com.framework.runner.APIRunner"/>
+    </classes>
+  </test>
+</suite>
